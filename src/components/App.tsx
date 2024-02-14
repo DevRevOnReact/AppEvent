@@ -2,7 +2,7 @@ import * as React from "react";
 import "./../assets/scss/App.scss";
 import { Header } from "./Header/Header";
 import { Routes, Route } from "react-router";
-import Cart from "./Cart/Cart";
+import { Cart } from "./Cart/Cart";
 import { Catalog } from "./Catalog/Catalog";
 import { useSelector } from "react-redux";
 import { RootState } from "../store/store";

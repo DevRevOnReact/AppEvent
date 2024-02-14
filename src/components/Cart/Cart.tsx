@@ -10,7 +10,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "../../ui/Button/Button";
 import { Marquee } from "../../ui/Marquee/Marquee";
 
-const Cart: React.FC = () => {
+export const Cart: React.FC = () => {
   const dispatch = useDispatch();
   const cartItems = useSelector((state: RootState) => state.cart.items);
   const total = cartItems.reduce(
@@ -89,5 +89,3 @@ const Cart: React.FC = () => {
     </>
   );
 };
-
-export default Cart;
