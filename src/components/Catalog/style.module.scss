@@ -1,0 +1,16 @@
+.container{
+    height: 100%;
+    margin-inline: 20px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	flex-direction: row;
+	align-items: center;
+	padding-bottom: 50px;
+    @media (min-width: 768px) {
+		max-width: 83.3%;
+		margin: 0 auto;
+		padding-inline: 0;
+	}
+}

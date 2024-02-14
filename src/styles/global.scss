@@ -1,0 +1,37 @@
+@import './variables/variables.scss';
+@import 'mixins/mixins.scss';
+@import './reset.scss';
+@import './fonts.scss';
+
+body {
+  background: var(--background);
+  color: var(--text-color);
+   transition: background-color 0.5s ease, color 0.5s ease;
+   background-size:100% 100% ;
+   margin: 0; 
+   padding: 0;
+   font-family: 'Rubik Mono One', sans-serif;
+   text-transform: uppercase;
+   background-image: url('https://appevent.ru/tilda/images/tild3731-3262-4532-b033-366639373437__bg3.png');
+   background-repeat: no-repeat;
+}
+
+button {
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+div, p{
+  background-color: var(--background);
+  color: var(--button-text-color);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+}
+
+img{
+  object-fit: contain;
+}

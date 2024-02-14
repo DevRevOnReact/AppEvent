@@ -1,0 +1,31 @@
+@import './../../styles/global.scss';
+
+@keyframes buttonFadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.button{
+    padding: 0px 15px;
+    display: block;
+    @include responsiveFont(16, 16, 1.5);
+    font-weight: 500;
+    height: 65px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--gradient);
+    background-color: transparent;
+    outline: none;
+    border: none;
+    animation: buttonFadeIn 0.5s ease;
+}
+
+.button:focus {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+    transform: scale(0.95);
+    transition: transform 0.2s ease;
+}

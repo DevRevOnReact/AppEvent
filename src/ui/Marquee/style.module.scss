@@ -1,0 +1,19 @@
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee__container {
+ font-size: 0;
+}
+
+.gradient {
+ background-image: var(--gradient);
+ color: transparent;
+ display: inline-block;
+ font-size: 150px;
+ margin-right: 100px;
+ padding: 30px 0px 30px;
+ background-clip: text;
+}
+

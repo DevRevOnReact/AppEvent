@@ -1,0 +1,34 @@
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+a {
+	color: unset;
+	text-decoration: none;
+}
+
+button {
+	border: none;
+	background: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+	font: inherit;
+	font-size: 100%;
+}
+
+a,
+button,
+input,
+label {
+	-webkit-tap-highlight-color: transparent;
+}

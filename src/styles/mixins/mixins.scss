@@ -1,0 +1,31 @@
+$mbMaxWidth: 767;
+$tabletMinWidth: 768;
+$tabletMaxWidth: 1440;
+$pcMinWidth: 1441;
+
+$k: (100vw - #{$mbMaxWidth}px) / ($tabletMaxWidth - $mbMaxWidth);
+
+@mixin responsiveFont($mbSize, $pcSize, $lineHeight) {
+  font-size: #{$mbSize}px;
+  line-height: $lineHeight;
+
+  @media (min-width: #{$tabletMinWidth}px) {
+    font-size: calc(#{$mbSize}px + (#{$pcSize} - #{$mbSize}) * #{$k});
+  }
+
+  @media (min-width: #{$pcMinWidth}px) {
+    font-size: calc(#{$pcSize} * (100vw / #{$tabletMaxWidth}));
+  }
+}
+
+@mixin fluid($property, $mbSize, $pcSize) {
+  #{$property}: #{$mbSize}px;
+
+  @media (min-width: #{$tabletMinWidth}px) {
+    #{$property}: calc(#{$mbSize}px + (#{$pcSize} - #{$mbSize}) * #{$k});
+  }
+
+  @media (min-width: #{$pcMinWidth}px) {
+    #{$property}: calc(#{$pcSize} * (100vw / #{$tabletMaxWidth}));
+  }
+}

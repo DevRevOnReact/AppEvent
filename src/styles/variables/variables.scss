@@ -1,0 +1,17 @@
+.light-theme {
+	--background: url(https://appevent.ru/tilda/images/tild3731-3262-4532-b033-366639373437__bg3.png);
+	--text-color: black;
+	--button-background-color: white;
+	--button-text-color: black;
+	--gradient: linear-gradient(272deg, rgba(250,135,198,1) 0%, #ffcc00 100%);
+	transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  
+  .dark-theme {
+	--background: #2c3f50;
+	--text-color: #ffffff;
+	--button-background-color: black;
+	--button-text-color: white;
+	--gradient: linear-gradient(272deg, rgb(135, 166, 250) 0%, #1d2043 100%);
+	  transition: background-color 0.5s ease, color 0.5s ease;
+  }
